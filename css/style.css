@@ -1,0 +1,194 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size:12px;
+    overflow: hidden;
+    background-color: #524648;
+
+}
+.thumbbox{
+    display: block;
+    width: 100%;
+    height: 100%;
+    letter-spacing: -.5em;
+    white-space: nowrap;
+}
+.onebox{
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: normal;
+    position: absolute;
+    width:10%;
+    height:100%;
+    background-size: auto 100%;
+    background-position: center top;
+    transition: all .3s linear;
+    text-align: center;
+    overflow: hidden;
+}
+.onebox img{
+    position: relative;
+    left: 50%;
+    margin-left: -750px;
+}
+.onebox.start{
+    left:-10% !important;
+}
+.onebox.on{
+    width:50vw;
+    z-index: 2;
+    left: 0 !important;
+}
+.onebox.on img{
+}
+
+.onebox:nth-child(1){
+}
+.onebox:nth-child(2){
+    left: 10%;
+}
+.onebox:nth-child(3){
+    left: 20%;
+}
+.onebox:nth-child(4){
+    left: 30%;
+}
+.onebox:nth-child(5){
+    left: 40.01%;
+}
+.onebox:nth-child(6){
+    left: 50%;
+}
+.onebox:nth-child(7){
+    left: 60%;
+}
+.onebox:nth-child(8){
+    left: 70%;
+}
+.onebox:nth-child(9){
+    left: 80%;
+}
+.onebox:nth-child(10){
+    left: 90%;
+}
+.textbox{
+    position: absolute;
+
+    padding-top:10%;
+    width: 50%;
+    left: 100%;
+    height: 100%;
+    transition: all .2s linear;
+    background-color: #524648;
+    color: #2aa78a;
+    letter-spacing: .5em;
+}
+#textbox_str{
+    white-space: normal;
+    padding: 1em;
+    font-size: 1.2em;
+}
+.textbox.on{
+    left:50%;
+}
+button{
+    padding:0;
+    display: inline-block;
+    position: relative;
+    background: none;
+    color:#fff;
+    border: none;
+    width: 200px;
+    margin: 0 auto;
+    margin-top:1rem;
+}
+.into{
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.5em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.linebox::before,.linebox::after{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:2px;
+}
+
+.linebox .into::before,.linebox .into::after{
+    position:absolute;
+    content: "";
+    height: 100%;
+    width: 2px;
+}
+.linebox .into::after{
+    height: 100%;
+}
+.linebox::before{
+    top: 0;
+}
+.linebox::after{
+    bottom: 0;
+}
+.linebox .into::before{
+    left: 0;
+}
+.linebox .into::after{
+    right: 0;
+}
+
+/*#7EC2C2 #9DDCDC #FFF4E1 #E67A7A*/
+.linebox{
+    background-color: #2aa78a;
+    color: #524648;
+}
+.linebox:hover{
+    background-color: #2aa78a;
+}
+.linebox::before,.linebox::after,.linebox .into::before,.linebox .into::after{
+    background-color: #ddd;
+    transition: all 0.2s linear;
+}
+.linebox::before,.linebox::after{
+    width:0;
+}
+.linebox .into::before,.linebox .into::after{
+    height:0;
+}
+.linebox:hover::before,.linebox:hover::after{
+    width: 100%;
+}
+.linebox .into:hover::before,.linebox .into:hover::after{
+    height: 100%;
+}
+
+.linebox::before{
+    transition-delay: 0.6s;
+    left: 0;
+}
+.linebox::after{
+    transition-delay: 0.2s;
+    right: 0;
+}
+.linebox .into::before{
+    transition-delay: 0s;
+    bottom: 0;
+}
+.linebox .into::after{
+    transition-delay: 0.4s;
+    top: 0;
+}
+.linebox:hover::before{
+    transition-delay: 0s;
+}
+.linebox:hover::after{
+    transition-delay: 0.4s;
+}
+.linebox .into:hover::before{
+    transition-delay: 0.6s;
+}
+.linebox .into:hover::after{
+    transition-delay: 0.2s;
+}
