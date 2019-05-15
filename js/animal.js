@@ -19,12 +19,15 @@ const textbox = document.querySelector(".textbox");
 let x = 0;
 images.forEach(function(tmp,index){
     tmp.addEventListener("load",() => {
+        onebox[index].classList.remove("start");
+        console.log(tmp);
+/*
         x++;
         if(x === images.length){
             onebox.forEach(function(tmp2,index){
-                tmp2.classList.remove("start");
             });
         }
+*/
     });
 });
 
